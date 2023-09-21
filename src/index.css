@@ -11,9 +11,9 @@ body {
 .custom-btn {
   background-image: linear-gradient(
     to right,
-    #314755 0%,
-    #26a0da 51%,
-    #314755 100%
+    #348f50 0%,
+    #56b4d3 51%,
+    #348f50 100%
   );
   font-size: 15px;
   padding: 6px 30px;
@@ -25,6 +25,13 @@ body {
   border-radius: 10px;
   display: block;
   cursor: pointer;
+}
+
+.logo {
+  background: linear-gradient(to right, #348f50 0%, #56b4d3 51%, #348f50 100%);
+  background-clip: content-box;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
 }
 
 .custom-btn:hover {

@@ -1,9 +1,15 @@
 import React from "react";
+import Banner from "../Banner/Banner";
+import JobCategory from "../JobCategory/JobCategory";
+import FeauredJob from "../FeaturedJob/FeauredJob";
 
 const Home = () => {
   return (
     <div>
-      <h1>This is Home</h1>
+      <Banner />
+      <JobCategory />
+
+      <FeauredJob />
     </div>
   );
 };

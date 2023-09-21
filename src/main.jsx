@@ -5,8 +5,27 @@ import "./index.css";
 import { ThemeProvider } from "@material-tailwind/react";
 import { RouterProvider, createBrowserRouter } from "react-router-dom";
 import Layout from "./Layout/Layout.jsx";
+import Home from "./components/Home/Home.jsx";
+import AppliedJobs from "./components/AppliedJobs/AppliedJobs.jsx";
+import Jobs from "./components/Jobs/Jobs.jsx";
+import Statics from "./components/Statics/Statics.jsx";
+import Blogs from "./components/Blogs/Blogs.jsx";
+import ErrorPage from "./components/ErrorPage/ErrorPage.jsx";
 
-const router = createBrowserRouter([{ path: "/", element: <Layout /> }]);
+const router = createBrowserRouter([
+  {
+    path: "/",
+    element: <Layout />,
+    children: [
+      { path: "*", element: <ErrorPage /> },
+      { path: "/", element: <Home /> },
+      { path: "/jobs", element: <Jobs /> },
+      { path: "/applied", element: <AppliedJobs /> },
+      { path: "/statics", element: <Statics /> },
+      { path: "/blogs", element: <Blogs /> },
+    ],
+  },
+]);
 
 ReactDOM.createRoot(document.getElementById("root")).render(
   <React.StrictMode>

@@ -17,7 +17,7 @@ const Header = () => {
         <NavLink to="/statics">Statics</NavLink>
       </li>
       <li>
-        <NavLink to="/applied">Blogs</NavLink>
+        <NavLink to="/blogs">Blogs</NavLink>
       </li>
     </>
   );
@@ -47,20 +47,20 @@ const Header = () => {
               className="menu menu-xl dropdown-content mt-3 z-[1] p-2 shadow bg-base-100 rounded-box w-52"
             >
               {links}
-              <div className="navbar-end">
-                <a className="custom-btn">Button</a>
+              <div className="">
+                <a className="custom-btn w-full">Apply</a>
               </div>
             </ul>
           </div>
           <a className="btn btn-ghost normal-case text-3xl lg:text-5xl">
-            <span className="text-red-800">AS</span> Career
+            <span className="logo">AS</span> Career
           </a>
         </div>
         <div className="navbar-center  hidden lg:flex">
           <ul className="menu menu-horizontal text-xl px-1">{links}</ul>
         </div>
         <div className="navbar-end hidden md:flex">
-          <a className="custom-btn">Button</a>
+          <a className="custom-btn ">Apply</a>
         </div>
       </div>
     </div>
