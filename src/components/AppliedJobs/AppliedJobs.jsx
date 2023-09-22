@@ -5,9 +5,9 @@ import AppliedJobsDetails from "../AppliedJobsDetails/AppliedJobsDetails";
 import { Select, Option } from "@material-tailwind/react";
 
 const AppliedJobs = () => {
+  const jobs = useLoaderData();
   const [appliedJobs, setAppliedJobs] = useState([]);
   const [displayJobs, setdisplayJobs] = useState([]);
-  const jobs = useLoaderData();
 
   const handleJobFilter = (filter) => {
     if (filter === "All") {
