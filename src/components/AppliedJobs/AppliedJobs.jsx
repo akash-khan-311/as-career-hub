@@ -27,7 +27,7 @@ const AppliedJobs = () => {
 
   useEffect(() => {
     const storedJobsIds = getStoredJobApplications();
-    if (jobs.length > 0) {
+    if (jobs) {
       const jobsApplied = [];
       for (const id of storedJobsIds) {
         const job = jobs.find((job) => job.id === id);

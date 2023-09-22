@@ -9,7 +9,7 @@ const JobDetails = () => {
   const jobs = useLoaderData();
   const { id } = useParams();
   const idInt = parseInt(id);
-  const job = jobs.find((job) => job.id === parseInt(idInt));
+  const job = jobs.find((job) => job.id === idInt);
 
   const handleAppliedJob = () => {
     saveJobApplications(idInt);

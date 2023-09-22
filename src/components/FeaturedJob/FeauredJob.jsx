@@ -5,7 +5,7 @@ const FeauredJob = () => {
   const [jobs, setJobs] = useState([]);
   const [dataLength, setDataLength] = useState(4);
   useEffect(() => {
-    fetch("./data/jobs.json")
+    fetch("jobs.json")
       .then((res) => res.json())
       .then((data) => setJobs(data));
   }, []);
