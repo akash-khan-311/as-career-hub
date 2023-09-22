@@ -7,11 +7,12 @@ import {
   CardBody,
   CardFooter,
   Typography,
-  Button,
 } from "@material-tailwind/react";
+import { Link } from "react-router-dom";
 
 const Job = ({ job }) => {
   const {
+    id,
     logo,
     job_title,
     company_name,
@@ -50,7 +51,9 @@ const Job = ({ job }) => {
         </div>
       </CardBody>
       <CardFooter className="pt-0">
-        <button className="custom-btn">view details</button>
+        <Link to={`/job/${id}`}>
+          <button className="custom-btn">view details</button>
+        </Link>
       </CardFooter>
     </Card>
   );
