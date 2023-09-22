@@ -10,7 +10,7 @@ const AppliedJobsDetails = ({ job }) => {
     salary,
     company_name,
   } = job;
-  console.log(job);
+
   return (
     <div>
       <div className="backdrop-blur-lg rounded-lg lg:p-10 p-3 bg-white/10 my-5 flex flex-col lg:flex-row items-center justify-between">
