@@ -9,7 +9,7 @@ const AppliedJobsDetails = ({ job }) => {
     remote_or_onsite,
     salary,
     company_name,
-  } = job;
+  } = job || {};
 
   return (
     <div>

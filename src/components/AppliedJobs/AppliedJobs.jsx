@@ -38,7 +38,7 @@ const AppliedJobs = () => {
       setAppliedJobs(jobsApplied);
       setdisplayJobs(jobsApplied);
     }
-  }, []);
+  }, [jobs]);
   return (
     <div>
       <div className="backdrop-blur-2x bg-white/30 w-2/3 mx-auto rounded-2xl my-5">
@@ -54,7 +54,7 @@ const AppliedJobs = () => {
             </Select>
           </div>
         </div>
-        {displayJobs.map((job) => (
+        {displayJobs?.map((job) => (
           <AppliedJobsDetails key={job.id} job={job} />
         ))}
       </div>
