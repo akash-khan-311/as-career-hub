@@ -51,7 +51,7 @@ const Job = ({ job }) => {
         </div>
       </CardBody>
       <CardFooter className="pt-0">
-        <Link to={`/job/${id}`}>
+        <Link to={`/job/${id}`} state={company_name}>
           <button className="custom-btn">view details</button>
         </Link>
       </CardFooter>
